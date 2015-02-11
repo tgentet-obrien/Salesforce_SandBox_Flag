@@ -1,0 +1,16 @@
+{  
+  "manifest_version":2,
+  "name":"Salesforce Sandbox Flagger",
+  "description":"Moved the Small box on the right to a banner that spans the top of all Sandboxes",
+  "version":"1.1",
+  "background":{  
+    "scripts":[  
+      "runFlagging.js"
+    ]
+  },
+  "permissions":[  
+    "tabs",
+    "*://*.salesforce.com/",
+    "*://*.force.com/"
+  ]
+}

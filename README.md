@@ -17,5 +17,8 @@ To install this Extenstion you will need to do the following:
 
 4) Enjoy!
 
+**Things I've fixed**
+- Issue with loading ~ the extension would only run when you moved from one tab to another and not on page refresh.
+
 **Bugs**
 - None that I know of.

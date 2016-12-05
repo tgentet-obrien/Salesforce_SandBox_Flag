@@ -21,4 +21,9 @@
     for(i=0; i < parents.length; i++){
         parents[i].style.paddingTop="30px";
     }
+    
+    var headerBar = document.getElementById('globalHeaderBar');
+    
+    if(headerBar != undefined && headerBar != null)
+        headerBar.style.margin = '36px -12px';
 })();

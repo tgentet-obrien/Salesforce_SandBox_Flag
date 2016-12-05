@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Salesforce Sandbox/Loged in as Banner",
+  "name": "Salesforce Sandbox/Logged in as Banner",
   "description": "Moved the Small box on the right to a banner that spans the top of all Sandboxes",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "background": {
     "scripts": [
       "runFlagging.js"

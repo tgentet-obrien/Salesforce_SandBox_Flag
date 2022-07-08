@@ -1,16 +1,14 @@
 {
-  "manifest_version": 2,
-  "name": "Salesforce Sandbox/Loged in as Banner",
-  "description": "Moved the Small box on the right to a banner that spans the top of all Sandboxes",
-  "version": "1.3",
-  "background": {
-    "scripts": [
-      "runFlagging.js"
-    ]
-  },
-  "permissions": [
-    "tabs",
-    "*://*.salesforce.com/",
-    "*://*.force.com/"
-  ]
+   "background": {
+      "scripts": [ "runFlagging.js" ]
+   },
+   "content_scripts": [ {
+      "js": [ "connection.js" ],
+      "matches": [ "*://*.salesforce.com/", "*://*.force.com/" ]
+   } ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "manifest_version": 2,
+   "name": "Salesforce Instance Flag",
+   "permissions": [ "tabs", "storage", "http://*/", "https://*/" ],
+   "version": "4.2"
 }
